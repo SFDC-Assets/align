@@ -12,6 +12,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Appointment__c.External_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Appointment__c.Start_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
