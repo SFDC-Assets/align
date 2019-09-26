@@ -6,5 +6,5 @@ sfdx force:user:password:generate
 sfdx force:org:open -p /lightning/o/Lead/list?filterName=All_Leads
 
 sfdx shane:heroku:repo:deploy -g mshanemc -r align-web-demo -n `basename "${PWD/mshanemc-/}"` -t autodeployed-demos -o DOCTOR_ID=`sfdx shane:data:id:query -o Account -w "Name = 'Bella Smile'"`
-heroku access:add platformpmmdemos@gmail.com -a `basename "${PWD/mshanemc-/}"` --permissions deploy,operate,manage
+# heroku access:add platformpmmdemos@gmail.com -a `basename "${PWD/mshanemc-/}"` --permissions deploy,operate,manage
 sfdx shane:heroku:connect -a `basename "${PWD/mshanemc-/}"` -f config/invisalign-web-demo.json -e custom
