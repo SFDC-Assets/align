@@ -1,15 +1,15 @@
 {
-  "orgName": "Align Core Portion DF18",
-  "adminEmail": "platformpmmdemos@mailinator.com",
-  "edition": "Developer",
-  "settings": {
-    "lightningExperienceSettings": {
-      "enableS1DesktopEnabled": true
-    },
-    "securitySettings": {
-      "passwordPolicies": {
-        "enableSetPasswordInApi": true
-      }
+    "orgName": "Align Core Portion DF18",
+    "adminEmail": "platformpmmdemos@mailinator.com",
+    "edition": "Developer",
+    "settings": {
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        },
+        "securitySettings": {
+            "passwordPolicies": {
+                "enableSetPasswordInApi": true
+            }
+        }
     }
-  }
 }

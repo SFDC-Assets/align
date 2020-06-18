@@ -1,55 +1,55 @@
 {
-  "mappings": [
-    {
-      "object_name": "Lead",
-      "config": {
-        "access": "read_write",
-        "sf_notify_enabled": true,
-        "sf_polling_seconds": 600,
-        "sf_max_daily_api_calls": 30000,
-        "fields": {
-          "LastName": {},
-          "Doctor__c": {},
-          "Name": {},
-          "MobilePhone": {},
-          "IsDeleted": {},
-          "SystemModstamp": {},
-          "External_ID__c": {},
-          "CreatedDate": {},
-          "PostalCode": {},
-          "Id": {},
-          "FirstName": {},
-          "Date_of_Birth__c": {},
-          "Email": {},
-          "Company": {}
+    "mappings": [
+        {
+            "object_name": "Lead",
+            "config": {
+                "access": "read_write",
+                "sf_notify_enabled": true,
+                "sf_polling_seconds": 600,
+                "sf_max_daily_api_calls": 30000,
+                "fields": {
+                    "LastName": {},
+                    "Doctor__c": {},
+                    "Name": {},
+                    "MobilePhone": {},
+                    "IsDeleted": {},
+                    "SystemModstamp": {},
+                    "External_ID__c": {},
+                    "CreatedDate": {},
+                    "PostalCode": {},
+                    "Id": {},
+                    "FirstName": {},
+                    "Date_of_Birth__c": {},
+                    "Email": {},
+                    "Company": {}
+                },
+                "indexes": {
+                    "SystemModstamp": {
+                        "unique": false
+                    },
+                    "External_ID__c": {
+                        "unique": true
+                    },
+                    "Id": {
+                        "unique": true
+                    }
+                },
+                "upsert_field": "External_ID__c"
+            }
+        }
+    ],
+    "connection": {
+        "app_name": "invisalign-web-demo",
+        "organization_id": "00DZ000000N8S0UMAV",
+        "exported_at": "2018-09-06T21:57:27.819542+00:00",
+        "features": {
+            "poll_db_no_merge": true,
+            "poll_external_ids": false,
+            "rest_count_only": false
         },
-        "indexes": {
-          "SystemModstamp": {
-            "unique": false
-          },
-          "External_ID__c": {
-            "unique": true
-          },
-          "Id": {
-            "unique": true
-          }
-        },
-        "upsert_field": "External_ID__c"
-      }
-    }
-  ],
-  "connection": {
-    "app_name": "invisalign-web-demo",
-    "organization_id": "00DZ000000N8S0UMAV",
-    "exported_at": "2018-09-06T21:57:27.819542+00:00",
-    "features": {
-      "poll_db_no_merge": true,
-      "poll_external_ids": false,
-      "rest_count_only": false
+        "api_version": "43.0",
+        "name": "invisalign-web-demo:DATABASE_URL:salesforce",
+        "logplex_log_enabled": false
     },
-    "api_version": "43.0",
-    "name": "invisalign-web-demo:DATABASE_URL:salesforce",
-    "logplex_log_enabled": false
-  },
-  "version": 1
+    "version": 1
 }
